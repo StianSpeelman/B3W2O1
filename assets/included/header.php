@@ -5,6 +5,7 @@
 </head>
 <body>
     <div id="center">
-    <nav><a href="ErHeerstPaniek.php">Er Heerst Paniek...</a> <a href="Onkunde.php">Onkunde</a></nav>
+    <nav><a href="Paniek.php">Er Heerst Paniek...</a> 
+    	<a href="Onkunde.php">Onkunde</a></nav>
 </body>
 </html>

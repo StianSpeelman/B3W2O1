@@ -29,7 +29,7 @@
 
     }else{echo "<div>";}
 ?>
-    <form action='assets/includes/textGenerator.php' method='get'>
+    <form action='assets/included/textGenerator.php' method='get'>
     <h1>Er heerst paniek...</h1>
 
     <span id="questions">
@@ -60,11 +60,11 @@
     <input type="text" name="teacher" value="<?=$teacher?>"><br><br>
     <input type="text" name="buy" value="<?=$buy?>"><br><br>
     <input type="text" name="activity" value="<?=$activity?>"><br><br>
-    <input type="submit" name="post-erHeerstPaniek">
+    <input type="submit" name="post-ErHeerstPaniek">
 
     </span>
     </form>
     </div>
 </body>
 </html>
-<?php include 'assets/includes/footer.php'?>
+<?php include 'assets/included/footer.php'?>

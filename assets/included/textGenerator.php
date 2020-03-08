@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET['post-erHeerstPaniek'])) {
+if (isset($_GET['post-ErHeerstPaniek'])) {
 
     $pet = htmlspecialchars($_GET["pet"]);
     $miperson = htmlspecialchars($_GET["miperson"]);
@@ -11,12 +11,12 @@ if (isset($_GET['post-erHeerstPaniek'])) {
     $activity = htmlspecialchars($_GET["activity"]);
 
     if(empty($pet)||empty($miperson)||empty($kingdom)||empty($bored)||empty($toy)||empty($king)||empty($buy)||empty($activity)){
-        header("Location: ../../ErHeerstPaniek.php?post=emptyfields&pet=$pet&miperson=$miperson&country=$kingdom&bored=$bored&toys=$toy&teacher=$king&buy=$buy&activity=$activity");
+        header("Location: ../../Paniek.php?post=emptyfields&pet=$pet&miperson=$miperson&country=$kingdom&bored=$bored&toys=$toy&teacher=$king&buy=$buy&activity=$activity");
         exit();
     }
     
     $newContent = '<h1>Er heerst paniek...</h1> <br> Er heerst paniek in het koninkrijk '.$kingdom.'. Koning '.$king.' is ten einde raad en als koning '.$king.' ten einde raad is, dan roept hij zijn ten-einde-raadsheer '.$miperson.'.<br><br>"'.$miperson.'! Het is een ramp! Het is een schande!"<br><br>"Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?"<br><br>"Mijn '.$pet.' is verdwenen! Zo maar, zonder waarschuwing. En ik had net '.$toy.' voor hem gekocht!"<br><br>"Majesteit, uw '.$pet.' komt vast vanzelf weer terug?<br><br>"Ja, das`s leuk en aardig, maar hoe moet ik in de tussentijd '.$activity.' leren " <br><br>"Maar Sire, daar kunt u toch uw '.$buy.' voor gebruiken."<br><br>"'.$miperson.', je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."<br><br>"'.$bored.', Sire"';
-    header("Location: ../../ErHeerstPaniek.php?post=success&text=$newContent");
+    header("Location: ../../Paniek.php?post=success&text=$newContent");
     exit();
 }elseif(isset($_GET['post-onkunde'])){
 
@@ -39,6 +39,6 @@ if (isset($_GET['post-erHeerstPaniek'])) {
     exit();
 
 }else{
-    header("Location: ../../ErHeerstPaniek.php?post=notCorrect");
+    header("Location: ../../Paniek.php?post=notCorrect");
     exit();
 }

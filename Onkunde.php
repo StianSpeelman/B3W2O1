@@ -1,8 +1,8 @@
-<?php include 'assets/includes/header.php'?>
+<?php include 'assets/included/header.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Er heerst paniek...</title>
+    <title>Onkunde</title>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
 
     }else{echo "<div>";}
 ?>
-    <form action='assets/includes/textGenerator.php' method='get'>
+    <form action='assets/included/textGenerator.php' method='get'>
     <h1>Onkunde</h1>
 
     <span id="questions">
@@ -63,4 +63,4 @@
     </div>
 </body>
 </html>
-<?php include 'assets/includes/footer.php'?>
+<?php include 'assets/included/footer.php'?>
