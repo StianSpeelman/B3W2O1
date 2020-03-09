@@ -3,19 +3,19 @@ if (isset($_GET['post-ErHeerstPaniek'])) {
 
     $pet = htmlspecialchars($_GET["pet"]);
     $miperson = htmlspecialchars($_GET["miperson"]);
-    $game = htmlspecialchars($_GET["survival"]);
+    $kingdom = htmlspecialchars($_GET["country"]);
     $bored = htmlspecialchars($_GET["bored"]);
     $toy = htmlspecialchars($_GET["toys"]);
-    $player = htmlspecialchars($_GET["teacher"]);
+    $king = htmlspecialchars($_GET["teacher"]);
     $buy = htmlspecialchars($_GET["buy"]);
     $activity = htmlspecialchars($_GET["activity"]);
 
-    if(empty($pet)||empty($miperson)||empty($game)||empty($bored)||empty($toy)||empty($king)||empty($buy)||empty($activity)){
-        header("Location: ../../Paniek.php?post=emptyfields&pet=$pet&miperson=$miperson&country=$kingdom&bored=$bored&toys=$toy&teacher=$king&buy=$buy&activity=$activity");
+    if(empty($pet)||empty($miperson)||empty($kingdom)||empty($bored)||empty($toy)||empty($king)||empty($buy)||empty($activity)){
+        header("Location: ../../Paniek.php?post=emptyfields&pet=$pet&miperson=$miperson&survival=$game&bored=$bored&toys=$toy&anon=$player&buy=$buy&activity=$activity");
         exit();
     }
     
-    $newContent = '<h1>Er heerst paniek...</h1> <br> Er heerst paniek in Minecraft '.$game.'. Koning '.$player.' is ten einde raad en als koning '.$player.' ten einde raad is, dan roept hij zijn meest vertrouwde villager '.$miperson.'.<br><br>"'.$miperson.'! Het is een ramp! Het is een schande!"<br><br>"Heer, Avonturier, Grootse ontdekker, wat is er aan de hand?"<br><br>"Mijn '.$pet.' is verdwenen! Zomaar, zonder iets te laten merken. En ik had net '.$toy.' voor hem gekocht!"<br><br>"Majesteit, uw '.$pet.' komt vast vanzelf weer terug?<br><br>"Ja, da`s leuk en aardig, maar hoe moet ik in de tussentijd '.$activity.' leren " <br><br>"Maar Sire, daar kunt u toch uw '.$buy.' voor gebruiken."<br><br>"'.$miperson.', je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."<br><br>"'.$bored.', Heer"';
+    $newContent = '<h1>Er heerst paniek...</h1> <br> Er heerst paniek in het koninkrijk '.$kingdom.'. Koning '.$king.' is ten einde raad en als '.$king.' ten einde raad is, dan roept hij zijn meest vertrouwde villager '.$miperson.' tot zich.<br><br>"'.$miperson.'! Het is een ramp! Het is verschrikkelijk!"<br><br>"Heer, Avonturier, Grootse ontdekker, wat is er aan de hand?"<br><br>"Mijn '.$pet.' is verdwenen! Zomaar, zonder iets te laten merken. En ik had net '.$toy.' voor hem gekocht!"<br><br>"Majesteit, uw '.$pet.' komt vast vanzelf weer terug?<br><br>"Ja, da`s leuk en aardig, maar hoe moet ik in de tussentijd '.$activity.' leren " <br><br>"Maar Sire, daar kunt u toch uw '.$buy.' voor gebruiken."<br><br>"'.$miperson.', je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had."<br><br>"'.$bored.', Sire"';
     header("Location: ../../Paniek.php?post=success&text=$newContent");
     exit();
 }elseif(isset($_GET['post-onkunde'])){

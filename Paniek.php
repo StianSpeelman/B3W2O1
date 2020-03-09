@@ -18,10 +18,10 @@
             
             $pet = htmlspecialchars($_GET["pet"]);
             $miperson = htmlspecialchars($_GET["miperson"]);
-            $country = htmlspecialchars($_GET["country"]);
+            $game = htmlspecialchars($_GET["survival"]);
             $bored = htmlspecialchars($_GET["bored"]);
             $toy = htmlspecialchars($_GET["toys"]);
-            $teacher = htmlspecialchars($_GET["teacher"]);
+            $player = htmlspecialchars($_GET["anon"]);
             $buy = htmlspecialchars($_GET["buy"]);
             $activity = htmlspecialchars($_GET["activity"]); 
             echo "<div>";  
